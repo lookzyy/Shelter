@@ -344,6 +344,12 @@ li a:hover {
   border-radius: 100px;
 }
 
+.left-arrow:hover,
+.right-arrow:hover {
+  background-color: #FDDCC4;
+}
+
+
 .card-katrine {
   position: absolute;
   width: 270px;
@@ -909,7 +915,7 @@ footer {
     left: 0%;
     right: 0%;
     top: 0px;
-    background: url(/img/banner-texture.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    background: url(assets/img/banner-texture.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
   }
 
   .start-screen-gradient-background {
@@ -1203,10 +1209,6 @@ footer {
     top: 150px;
   }
 
-  .left-arrow:hover {
-    background-color: #FDDCC4;
-  }
-
   .left-arrow {
     display: flex;
     flex-direction: column;
@@ -1235,6 +1237,11 @@ footer {
     border: 2px solid #F1CDB3;
     box-sizing: border-box;
     border-radius: 100px;
+  }
+
+  .left-arrow:hover,
+  .right-arrow:hover {
+    background-color: #FDDCC4;
   }
 
   .card-katrine {
@@ -1593,6 +1600,7 @@ footer {
     left: 0%;
     right: 0%;
     top: 4652px;
+    background: url(assets/img/banner-texture.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
   }
 
   .footer-gradient-background {
