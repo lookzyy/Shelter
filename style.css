@@ -344,12 +344,6 @@ li a:hover {
   border-radius: 100px;
 }
 
-.left-arrow:hover,
-.right-arrow:hover {
-  background-color: #FDDCC4;
-}
-
-
 .card-katrine {
   position: absolute;
   width: 270px;
@@ -464,6 +458,11 @@ li a:hover {
 
 button {
   cursor: pointer
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  background-color: #FDDCC4;
 }
 
 .help {
@@ -1239,8 +1238,8 @@ footer {
     border-radius: 100px;
   }
 
-  .left-arrow:hover,
-  .right-arrow:hover {
+  .right-arrow:hover,
+  .left-arrow:hover {
     background-color: #FDDCC4;
   }
 
