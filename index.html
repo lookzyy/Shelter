@@ -22,10 +22,10 @@
         </div>
         <nav class="head-nav">
           <ul>
-            <li> <a href="#">About the shelter</a></li>
-            <li><a href="#">Our pets</a></li>
-            <li><a href="#">Help the shelter</a></li>
-            <li><a href="#">Contacts</a></li>
+            <li> <a class="current" href="index.html">About the shelter</a></li>
+            <li><a href="#pets">Our pets</a></li>
+            <li><a href="#help">Help the shelter</a></li>
+            <li><a href="#contacts">Contacts</a></li>
           </ul>
         </nav>
       </div>
@@ -38,12 +38,12 @@
           <h2>Not only people need a house</h2>
           <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will
             love you more than anybody else in the world, you will see!</p>
-          <button onclick="">Make a friend</button>
+          <button onclick="" class="make-a-friend-button">Make a friend</button>
         </div>
       </div>
-      <img src="img/start-screen-gradient-background.png" alt="start-screen-gradient-background"
-        class="start-screen-gradient-background">
-      <img src="img/768/start-screen-gradient-background-768.png" alt="ad" class="start-screen-gradient-background-768">
+      <!-- <img src="img/start-screen-gradient-background.png" alt="start-screen-gradient-background"
+        class="start-screen-gradient-background"> -->
+      <!-- <img src="img/768/start-screen-gradient-background-768.png" alt="ad" class="start-screen-gradient-background-768"> -->
     </div>
 
     <div class="about">
@@ -67,13 +67,16 @@
       </div>
     </div>
 
-    <div class="pets">
+    <div class="pets"><a name="pets"></a>
       <div class="pets-content">
         <h3>Our friends who <br> are looking for a house</h3>
         <div class="slider">
-          <button type="button" class="left-arrow"><img src="icons/Arrow-left.png" alt="left arrow"
+          <!-- <button type="button" class="left-arrow"><img src="icons/Arrow-left.png" alt="left arrow"
               class="arrow-left-image">
-          </button>
+          </button> -->
+          <a class="left-arrow" href=""><img src="icons/Arrow-left.png" alt="left arrow" class="arrow-left-image"></a>
+
+
           <div class="card-katrine">
             <img src="img/pets-katrine.png" alt="pet-katrine">
             <p>Katrine</p>
@@ -104,7 +107,7 @@
         <button type="button" class="button-primary">Get to know the rest</button>
       </div>
     </div>
-    <div class="help">
+    <div class="help"><a name="help"></a>
       <div class="help-content">
         <h3>How you can help our shelter</h3>
         <div class="help-list">
@@ -113,11 +116,11 @@
             <div class="inner-div">Pet Food</div>
           </div>
           <div class="icon-Transportation">
-            <img src="icons/icon-Transportation.svg" alt="icon-Transportatio">
+            <img src="icons/icon-transportation.svg" alt="icon-Transportatio">
             <div class="inner-div">Transportation</div>
           </div>
           <div class="icon-Toys">
-            <img src="icons/icon-Toys.svg" alt="icon-Toys">
+            <img src="icons/icon-toys.svg" alt="icon-Toys">
             <div class="inner-div">Toys</div>
           </div>
           <div class="icon-Bowls-and-cups">
@@ -125,15 +128,15 @@
             <div class="inner-div">Bowls and cups</div>
           </div>
           <div class="icon-Shampoos">
-            <img src="icons/icon-Shampoos.svg" alt="icon-pet-food">
+            <img src="icons/icon-shampoos.svg" alt="icon-pet-food">
             <div class="inner-div">Shampoos</div>
           </div>
           <div class="icon-Vitamins">
-            <img src="icons/icon-Vitamins.svg" alt="Vitamins">
+            <img src="icons/icon-vitamins.svg" alt="Vitamins">
             <div class="inner-div">Vitamins</div>
           </div>
           <div class="icon-Medicines">
-            <img src="icons/icon-Medicines.svg" alt="icon-Medicines">
+            <img src="icons/icon-medicines.svg" alt="icon-Medicines">
             <div class="inner-div">Medicines</div>
           </div>
           <div class="icon-collars-or-leashes">
@@ -156,7 +159,9 @@
           <div class="credit-card">
             <div class="credit-card-content">
               <img src="icons/credit-card.svg" alt="credit-card">
-              <h4>8380 2880 8028 8791 7435</h4>
+              <a href="#">
+                <h4>8380 2880 8028 8791 7435</h4>
+              </a>
             </div>
           </div>
           <p id="legal-text">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
@@ -169,26 +174,36 @@
     </div>
     <footer>
       <div class="footer-content">
-        <div class="contacts">
+        <div class="contacts"> <a name="contacts"></a>
           <h3>For questions and suggestions</h3>
           <div class="mail">
             <img src="icons/mail.svg" alt="mail-icon">
-            <h4>email@shelter.com</h4>
+            <a href="mailto:email@shelter.com">
+              <h4>email@shelter.com</h4>
+            </a>
           </div>
           <div class="phone">
             <img src="icons/phone.svg" alt="phone-icon">
-            <h4>+13 674 567 75 54</h4>
+            <a href="tel:+13-674-567-75-54">
+              <h4>+13 674 567 75 54</h4>
+            </a>
           </div>
         </div>
         <div class="locations">
           <h3>We are waiting for your visit</h3>
           <div class="boston">
             <img src="icons/pin.svg" alt="pin-icon">
-            <h4>1 Central Street, Boston<br>(entrance from the store)</h4>
+            <a href="https://www.google.com/maps/place/1+Central+St,+Boston,+MA+02109,+USA/@42.3585519,-71.056915,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370868bc2ce7b:0x82fa7db94f5fea9e!8m2!3d42.3585519!4d-71.0547263"
+              target="_blank">
+              <h4>1 Central Street, Boston<br>(entrance from the store)</h4>
+            </a>
           </div>
           <div class="london">
             <img src="icons/pin1.svg" alt="pin-icon">
-            <h4>18 South Park, London </h4>
+            <a href="https://www.google.com/maps/place/18+S+Park+Rd,+London,+UK/@51.4441261,-0.2098376,17z/data=!3m1!4b1!4m5!3m4!1s0x48760f46ff61dba9:0x5696e3b778e1f425!8m2!3d51.4441261!4d-0.20764893"
+              target="_blank">
+              <h4>18 South Park, London </h4>
+            </a>
           </div>
         </div>
         <img src="img/footer-puppy.png" alt="footer-puppy" class="footer-puppy">
