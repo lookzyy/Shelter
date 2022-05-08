@@ -153,6 +153,7 @@ nav ul {
 li a {
   text-decoration: none;
   color: #CDCDCD;
+  transition: 0.2s;
 }
 
 li a:active,
@@ -166,7 +167,8 @@ li a:hover {
 }
 
 li a:hover {
-  padding-bottom: 5px;
+  transition: 0.2s;
+  font-size: 16px;
 }
 
 .about {
@@ -334,8 +336,19 @@ li a:hover {
   border-radius: 9px;
 }
 
+div[class^="card-"] {
+  background: #FAFAFA;
+  margin-bottom: 30px;
+  height: 435px;
+  width: 270px;
+  transition: 0.2s ease;
+}
+
+
 div[class^="card-"]:hover {
-  box-shadow: 3px 3px 10px rgb(170, 170, 170);
+  box-shadow: 5px 5px 15px rgb(170, 170, 170);
+  transform: translateY(-1.2rem);
+  transition: 0.3s ease;
 }
 
 div[class^="card-"]:hover>.secondary-button button {
@@ -453,13 +466,6 @@ div[class^="card-"]:hover>.secondary-button button {
   letter-spacing: 0.06em;
   color: #292929;
 }
-
-.card-jennifer button:hover,
-.card-katrine button:hover,
-.card-woody button:hover {
-  background-color: #FDDCC4;
-}
-
 
 button {
   cursor: pointer
