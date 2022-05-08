@@ -39,7 +39,7 @@
           <h2>Not only people need a house</h2>
           <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will
             love you more than anybody else in the world, you will see!</p>
-          <button onclick="" class="make-a-friend-button">Make a friend</button>
+          <a href="#friends" class="make-a-friend-button">Make a friend</a>
         </div>
       </div>
     </div>
@@ -65,7 +65,7 @@
       </div>
     </div>
 
-    <div class="pets"><a name="pets"></a>
+    <div class="pets"><a name="pets"></a> <a name="friends"></a>
       <div class="pets-content">
         <h3>Our friends who <br> are looking for a house</h3>
         <div class="slider">
@@ -77,23 +77,23 @@
             <img src="assets/img/pets-katrine.png" alt="pet-katrine">
             <p>Katrine</p>
             <div class="secondary-button">
-              <button type="button" class="learn-more">Learn more
+              <button type="button" class="learn-more" id="button-katrine">Learn more
               </button>
             </div>
           </div>
           <div class="card-jennifer">
-            <img src="assets/img/pets-jennifer.png" alt="pet-katrine">
+            <img src="assets/img/pets-jennifer.png" alt="pet-jennifer">
             <p>Jennifer</p>
             <div class="secondary-button">
-              <button type="button" class="learn-more">Learn more
+              <button type="button" class="learn-more" id="button-jennifer">Learn more
               </button>
             </div>
           </div>
           <div class="card-woody">
-            <img src="assets/img/pets-woody.png" alt="pet-katrine">
+            <img src="assets/img/pets-woody.png" alt="pet-woody">
             <p>Woody</p>
             <div class="secondary-button">
-              <button type="button" class="learn-more">Learn more
+              <button type="button" class="learn-more" id="button-woody">Learn more
               </button>
             </div>
           </div>
@@ -101,7 +101,8 @@
               class="right-arrow-img">
           </button>
         </div>
-        <button type="button" class="button-primary">Get to know the rest</button>
+        <button onclick="location.href = 'pages/pets/index.html';" type="button" class="button-primary">Get to know the
+          rest</button>
       </div>
     </div>
     <div class="help"><a name="help"></a>
@@ -207,6 +208,36 @@
       </div>
     </footer>
   </div>
+
+  <div class="modal-container">
+    <div class="modal">
+      <div class="modal__inner">
+        <div class="modal-inner-content">
+          <button class="modal-close-button" type="button">&#10006;</button>
+          <div class="modal-inner-content-div">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-background">
+    </div>
+  </div>
+  <script type="text/html" id="modal-template">
+    <img src="{{imgUrl}}" alt="modal-img">
+    <div class="modal-content">
+      <h3 id="title">{{title}}</h3>
+      <h4>{{breed}}</h4>
+      <p>{{description}}</p>
+      <ul class="modal-specs">
+        <li><span id="modal-list-bold-text">Age: </span>{{age}}</li>
+        <li><span id="modal-list-bold-text">Inoculations: </span>{{inoculations}}</li>
+        <li><span id="modal-list-bold-text">Diseases: </span>{{diseases}}</li>
+        <li><span id="modal-list-bold-text">Parasites: </span>{{parasites}}</li>
+      </ul>
+    </div>
+  </script>
+  <script src="script.js"></script>
+
 </body>
 
 </html>

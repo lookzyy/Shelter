@@ -5,15 +5,164 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Shelter | Pets</title>
+  <title>Shelter</title>
 </head>
 
 <body>
-  <div>Pets page is not ready yet</div>
+  <div class="main-div">
+    <div class="start-screen">
+      <div class="header">
+        <div class="logo">
+          <h1>Cozy House</h1>
+          <h2>shelter for pets in Boston</h2>
+        </div>
+        <!-- <div class="sandwich-bar">
+          <i class="fas fa-bars"></i>
+        </div> -->
+        <nav class="head-nav sandwich">
+          <ul>
+            <li><a href="../../index.html">About the shelter</a></li>
+            <li><a class="current" href="index.html">Our pets</a></li>
+            <li><a href="../../index.html#help">Help the shelter</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="pets">
+
+      <div class="pets-content">
+
+        <h3>Our friends who<br>are looking for a house</h3>
+        <div class="cards-container">
+          <div class="card-katrine">
+            <img src="/assets/img/pets-katrine.png" alt="pet-katrine">
+            <p>Katrine</p>
+            <button type="button" class="learn-more" id="button-katrine">Learn more
+            </button>
+          </div>
+          <div class="card-jennifer">
+            <img src="/assets/img/pets-jennifer.png" alt="pet-jennifer">
+            <p>Jennifer</p>
+            <button type="button" class="learn-more" id="button-jennifer">Learn more
+            </button>
+          </div>
+          <div class="card-woody">
+            <img src="/assets/img/pets-woody.png" alt="pet-woody">
+            <p>Woody</p>
+            <button type="button" class="learn-more" id="button-woody">Learn more
+            </button>
+          </div>
+          <div class="card-sophia">
+            <img src="/assets/img/pets-sophia.png" alt="pet-sophia">
+            <p>Sophia</p>
+            <button type="button" class="learn-more" id="button-sophia">Learn more
+            </button>
+          </div>
+          <div class="card-timmy">
+            <img src="/assets/img/pets-timmy.png" alt="pet-timmy">
+            <p>Timmy</p>
+            <button type="button" class="learn-more" id="button-timmy">Learn more
+            </button>
+          </div>
+          <div class="card-charly">
+            <img src="/assets/img/pets-charly.png" alt="pet-charly">
+            <p>Charly</p>
+            <button type="button" class="learn-more" id="button-charly">Learn more
+            </button>
+          </div>
+          <div class="card-scarlett">
+            <img src="/assets/img/pets-scarlet.png" alt="pet-scarlett">
+            <p>Scarlett</p>
+            <button type="button" class="learn-more" id="button-scarlett">Learn more
+            </button>
+          </div>
+          <div class="card-freddie">
+            <img src="/assets/img/pets-freddie.png" alt="pet-freddie">
+            <p>Frieddie</p>
+            <button type="button" class="learn-more" id="button-freddie">Learn more
+            </button>
+          </div>
+        </div>
+        <div class="page-navigation">
+          <button disabled="disabled" id="all-the-way-left-btn">&lt; &lt;</button>
+          <button disabled="disabled" id="left-btn">&lt;</button>
+          <button type="button" id="page-btn">1</button>
+          <button type="button" id="right-btn">&gt;</button>
+          <button type="button" id="all-the-way-right-btn">&gt; &gt;</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <div class="contacts"> <a name="contacts"></a>
+          <h3>For questions<br> and suggestions</h3>
+          <div class="mail">
+            <img src="/assets/icons/mail.svg" alt="mail-icon">
+            <a href="mailto:email@shelter.com">
+              <h4>email@shelter.com</h4>
+            </a>
+          </div>
+          <div class="phone">
+            <img src="/assets/icons/phone.svg" alt="phone-icon">
+            <a href="tel:+13-674-567-75-54">
+              <h4>+13 674 567 75 54</h4>
+            </a>
+          </div>
+        </div>
+        <div class="locations">
+          <h3>We are waiting<br> for your visit</h3>
+          <div class="boston">
+            <img src="/assets/icons/pin.svg" alt="pin-icon">
+            <a href="https://www.google.com/maps/place/1+Central+St,+Boston,+MA+02109,+USA/@42.3585519,-71.056915,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370868bc2ce7b:0x82fa7db94f5fea9e!8m2!3d42.3585519!4d-71.0547263"
+              target="_blank">
+              <h4>1 Central Street, Boston<br>(entrance from the store)</h4>
+            </a>
+          </div>
+          <div class="london">
+            <img src="/assets/icons/pin1.svg" alt="pin-icon">
+            <a href="https://www.google.com/maps/place/18+S+Park+Rd,+London,+UK/@51.4441261,-0.2098376,17z/data=!3m1!4b1!4m5!3m4!1s0x48760f46ff61dba9:0x5696e3b778e1f425!8m2!3d51.4441261!4d-0.20764893"
+              target="_blank">
+              <h4>18 South Park, London </h4>
+            </a>
+          </div>
+        </div>
+        <img src="/assets/img/footer-puppy.png" alt="footer-puppy" class="footer-puppy">
+      </div>
+    </footer>
+  </div>
+  <div class="modal-container">
+    <div class="modal">
+      <div class="modal__inner">
+        <div class="modal-inner-content">
+          <button class="modal-close-button" type="button">&#10006;</button>
+          <div class="modal-inner-content-div">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-background">
+    </div>
+  </div>
+  <script type="text/html" id="modal-template">
+    <img src="{{imgUrl}}" alt="modal-img">
+    <div class="content">
+      <h3 id="title">{{title}}</h3>
+      <h4>{{breed}}</h4>
+      <p>{{description}}</p>
+      <ul class="modal-specs">
+        <li><span id="modal-list-bold-text">Age: </span>{{age}}</li>
+        <li><span id="modal-list-bold-text">Inoculations: </span>{{inoculations}}</li>
+        <li><span id="modal-list-bold-text">Diseases: </span>{{diseases}}</li>
+        <li><span id="modal-list-bold-text">Parasites: </span>{{parasites}}</li>
+      </ul>
+    </div>
+  </script>
+  <script src="/pages/pets/script.js"></script>
 </body>
 
 </html>
