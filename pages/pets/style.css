@@ -95,6 +95,7 @@ h2 {
     padding-left: 4px;
 }
 
+
 .pets {
     position: absolute;
     top: 120px;
@@ -440,6 +441,10 @@ footer {
     background: rgb(241, 205, 179);
 }
 
+.sandwich-bar {
+    display: none;
+}
+
 @media only screen and (max-width : 1200px) {
 
     .pets {
@@ -460,7 +465,7 @@ footer {
     }
 }
 
-@media only screen and (max-width : 1080px) {
+@media only screen and (max-width : 1097px) {
 
     .pets {
         width: 100%;
@@ -570,7 +575,11 @@ footer {
 
 }
 
-@media only screen and (max-width : 811px) {
+.sandwich-button {
+    display: none;
+}
+
+@media only screen and (max-width : 850px) {
     .main-div {
         width: 100%;
     }
@@ -584,7 +593,8 @@ footer {
     }
 
     footer {
-        top: 1934px;
+        position: absolute;
+        top: 1483px;
         height: 640px;
     }
 
@@ -600,7 +610,16 @@ footer {
     .locations {
         margin-left: 0;
     }
+
+
 }
+
+@media only screen and (max-width : 839px) {
+    footer {
+        top: 1963px;
+    }
+}
+
 
 @media only screen and (max-width : 740px) {
     .main-div {
@@ -609,6 +628,29 @@ footer {
 
     .head-nav {
         display: none;
+    }
+
+    .sandwich-button {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 40px;
+        border: none;
+        background-color: white;
+    }
+
+    .sandwich-button .fas.fa-bars {
+        font-size: 40px;
+        transition: 0.3s;
+        color: black;
+    }
+
+    .head-nav.sandwich {
+        display: none;
+    }
+
+    .logo {
+        display: block;
     }
 
     .pets {
@@ -643,10 +685,57 @@ footer {
         top: 389px;
     }
 
-    /* .sandwich-bar {
+    .sandwich-bar {
+        z-index: 200;
+        color: rgb(0, 0, 0);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sandwich-bar #bar {
+        font-size: 40px;
+        transform: rotate(-90deg);
+        transition: 0.3s;
+        color: #F1CDB3;
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 30px;
+        top: 40px;
+        z-index: 200;
+    }
+
+    .logo-sandwich h2 {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 110%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.06em;
+        white-space: nowrap;
+        padding-bottom: 10px;
+        color: #F1CDB3;
+    }
+
+    .logo-sandwich h3 {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.1em;
+        padding-left: 4px;
+    }
+
+    .logo-sandwich {
+        position: absolute;
+        top: 30px;
+        left: 30px;
         z-index: 200;
         color: white;
     }
@@ -661,7 +750,7 @@ footer {
         background: #292929;
         z-index: 6;
         width: 100%;
-        height: 823px;
+        height: 100vh;
         margin: 0;
         padding: 0;
     }
@@ -673,15 +762,38 @@ footer {
     .head-nav.sandwich li a {
         font-size: 32px;
         line-height: 160%;
-        color: #FAFAFA;
-    } */
+        color: #CDCDCD;
+    }
 
+    .head-nav.sandwich li a:hover {
+        font-size: 34px;
+        color: white;
+    }
+
+    .head-nav.sandwich .current {
+        font-size: 34px;
+        color: white;
+    }
 }
 
 @media only screen and (max-width : 708px) {
     .modal-close-button {
         margin-top: -52px;
         margin-left: 460px;
+    }
+
+    .card-charly,
+    .card-timmy,
+    .card-sophia,
+    .card-freddie,
+    .card-scarlett {
+        display: none;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
     }
 
     .modal {
@@ -702,6 +814,7 @@ footer {
 }
 
 @media only screen and (max-width : 555px) {
+
     .main-div {
         width: 100%;
     }
@@ -716,12 +829,6 @@ footer {
 
     footer {
         top: 1934px;
-    }
-
-    .card-charly,
-    .card-timmy,
-    .card-sophia {
-        display: none;
     }
 
     .modal-inner-content-div img {
@@ -750,6 +857,7 @@ footer {
         display: none;
     }
 
+
 }
 
 @media only screen and (max-width : 320px) {
@@ -757,4 +865,5 @@ footer {
         margin-top: -57px;
         margin-left: 260px;
     }
+
 }

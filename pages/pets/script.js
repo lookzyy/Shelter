@@ -1,3 +1,18 @@
+var openSandwich = document.querySelector('.sandwich-button')
+var closeSandwich = document.getElementById('bar')
+
+
+openSandwich.addEventListener('click', () => {
+    document.querySelector(".head-nav.sandwich").style.display = "block";
+    document.querySelector(".logo").style.display = "none";
+})
+
+closeSandwich.addEventListener('click', () => {
+    document.querySelector(".head-nav.sandwich").style.display = "none";
+    document.querySelector(".logo").style.display = "block";
+})
+
+
 document.querySelectorAll('.learn-more').forEach(btnElement => {
     btnElement.addEventListener("click", (e) => {
         learnMoreFunction(e);
