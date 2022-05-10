@@ -222,6 +222,10 @@ div[class^="card-"]:hover>button {
     cursor: default;
 }
 
+#page-btn {
+    cursor: default;
+}
+
 #all-the-way-right-btn,
 #right-btn {
     background-color: white;
