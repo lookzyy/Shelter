@@ -60,7 +60,6 @@ li a {
 li a:hover {
     padding-bottom: 5px;
     color: #292929;
-    font-size: 16px;
     transition: 0.2s;
 }
 
@@ -93,6 +92,11 @@ h2 {
     align-items: center;
     letter-spacing: 0.1em;
     padding-left: 4px;
+}
+
+.logo-a {
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -202,10 +206,6 @@ div[class^="card-"]:hover>button {
     color: #292929;
 }
 
-#page-btn:hover {
-    background: white;
-    border: 2px solid #FDDCC4;
-}
 
 #all-the-way-right-btn:hover,
 #right-btn:hover {
@@ -214,12 +214,12 @@ div[class^="card-"]:hover>button {
 }
 
 
-
 #all-the-way-left-btn,
 #left-btn {
     border: 2px solid #CDCDCD;
     color: #CDCDCD;
     background: white;
+    cursor: default;
 }
 
 #all-the-way-right-btn,

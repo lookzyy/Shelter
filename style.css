@@ -158,17 +158,12 @@ li a {
 
 li a:active,
 li a:hover {
-  font-family: 'Arial';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 160%;
   color: #FAFAFA;
 }
 
-li a:hover {
-  transition: 0.2s;
-  font-size: 16px;
+
+.logo-a h1 {
+  text-decoration: none;
 }
 
 .about {
@@ -1247,10 +1242,6 @@ footer {
   }
 
   li a:hover {
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
     line-height: 160%;
     color: #FAFAFA;
     padding-bottom: 5px;
