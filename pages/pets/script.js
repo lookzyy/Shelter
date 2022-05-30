@@ -8,7 +8,7 @@ openSandwich.addEventListener('click', () => {
 })
 
 closeSandwich.addEventListener('click', () => {
-    document.querySelector(".head-nav.sandwich").style.display = "none";
+    document.querySelector(".head-nav.sandwich").style.display = "";
     document.querySelector(".logo").style.display = "block";
 })
 

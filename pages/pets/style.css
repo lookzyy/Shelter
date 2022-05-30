@@ -780,6 +780,13 @@ footer {
     }
 }
 
+@media only screen and (min-width : 741px) {
+    .logo {
+        display: block !important;
+    }
+}
+
+
 @media only screen and (max-width : 708px) {
     .modal-close-button {
         margin-top: -52px;
