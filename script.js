@@ -1,5 +1,5 @@
-var openSandwich = document.querySelector('.sandwich-button')
-var closeSandwich = document.getElementById('bar')
+let openSandwich = document.querySelector('.sandwich-button');
+let closeSandwich = document.getElementById('bar');
 
 
 openSandwich.addEventListener('click', () => {
@@ -59,4 +59,14 @@ function buildModalContent(petInfo) {
         .replace("{{title}}", petInfo.title);
 }
 
+//Slider
+let slider = document.querySelector(".slider");
+let item = slider.getElementsByClassName("pet-card")
 
+function next() {
+    slider.append(item[0])
+}
+
+function prev() {
+    slider.prepend(item[item.length - 1])
+}

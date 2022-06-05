@@ -290,11 +290,16 @@ li a:hover {
 }
 
 .slider {
-  position: absolute;
-  width: 1200px;
+  width: 83%;
+  overflow: hidden;
   height: 435px;
   left: 0px;
   top: 150px;
+  display: flex;
+  margin: auto;
+  margin-top: 150px;
+  gap: 91px;
+  justify-content: flex-start;
 }
 
 .left-arrow {
@@ -306,7 +311,7 @@ li a:hover {
   width: 52px;
   height: 52px;
   left: 0px;
-  top: 192px;
+  top: 341px;
   border: 2px solid #F1CDB3;
   box-sizing: border-box;
   border-radius: 100px;
@@ -321,14 +326,13 @@ li a:hover {
   width: 52px;
   height: 52px;
   left: 1148px;
-  top: 192px;
+  top: 341px;
   border: 2px solid #F1CDB3;
   box-sizing: border-box;
   border-radius: 100px;
 }
 
 .card-katrine {
-  position: absolute;
   width: 270px;
   height: 435px;
   left: 105px;
@@ -338,7 +342,6 @@ li a:hover {
 }
 
 .card-jennifer {
-  position: absolute;
   width: 270px;
   height: 435px;
   left: 465px;
@@ -405,7 +408,6 @@ div[class^="card-"]:hover>.secondary-button button {
 }
 
 .card-woody {
-  position: absolute;
   left: 68.75%;
   right: 8.75%;
   top: 0%;
@@ -422,7 +424,7 @@ div[class^="card-"]:hover>.secondary-button button {
   width: 261px;
   height: 52px;
   left: 470px;
-  top: 500px;
+  top: 645px;
   background: #F1CDB3;
   border: none;
   border-radius: 100px;
@@ -439,14 +441,10 @@ div[class^="card-"]:hover>.secondary-button button {
   background-color: #FDDCC4;
 }
 
-.card-jennifer p,
-.card-woody p,
-.card-katrine p {
-  position: absolute;
+.pet-card p {
+  margin: auto;
   width: 83px;
   height: 23px;
-  left: 94px;
-  top: 300px;
   font-family: 'Georgia';
   font-style: normal;
   font-weight: 400;
@@ -454,19 +452,17 @@ div[class^="card-"]:hover>.secondary-button button {
   line-height: 23px;
   letter-spacing: 0.06em;
   color: #545454;
+  margin-top: 25px;
 }
 
 .secondary-button {
-  position: absolute;
+  margin: 0 auto;
+  margin-top: 30px;
   width: 187px;
   height: 52px;
-  left: 41.5px;
-  top: 353px;
 }
 
-.card-jennifer button,
-.card-katrine button,
-.card-woody button {
+.learn-more {
   align-items: center;
   padding: 15px 45px;
   border: 2px solid #F1CDB3;
@@ -1312,11 +1308,10 @@ footer {
   }
 
   .slider {
-    position: absolute;
-    width: 708px;
     height: 435px;
-    left: 0px;
-    top: 150px;
+    width: 82%;
+    display: flex;
+    gap: 45px;
   }
 
   .left-arrow {
@@ -1328,7 +1323,6 @@ footer {
     width: 52px;
     height: 52px;
     left: 0px;
-    top: 192px;
     border: 2px solid #F1CDB3;
     box-sizing: border-box;
     border-radius: 100px;
@@ -1343,7 +1337,6 @@ footer {
     width: 52px;
     height: 52px;
     left: 660px;
-    top: 192px;
     border: 2px solid #F1CDB3;
     box-sizing: border-box;
     border-radius: 100px;
@@ -1354,37 +1347,6 @@ footer {
     background-color: #FDDCC4;
   }
 
-  .card-katrine {
-    position: absolute;
-    width: 270px;
-    height: 435px;
-    left: 64px;
-    top: 0px;
-    background: #FAFAFA;
-    border-radius: 9px;
-  }
-
-  .card-jennifer {
-    position: absolute;
-    width: 270px;
-    height: 435px;
-    left: 374px;
-    top: 0px;
-    background: #FAFAFA;
-    border-radius: 9px;
-  }
-
-  .card-woody {
-    position: absolute;
-    left: 68.75%;
-    right: 8.75%;
-    top: 0%;
-    bottom: 0%;
-    background: #FAFAFA;
-    border-radius: 9px;
-    display: none;
-  }
-
 
   .button-primary {
     padding: 15px 45px;
@@ -1392,7 +1354,6 @@ footer {
     width: 260px;
     height: 52px;
     left: 224px;
-    top: 506px;
     background: #F1CDB3;
     border: none;
     border-radius: 100px;
@@ -1403,7 +1364,6 @@ footer {
     line-height: 130%;
     letter-spacing: 0.12em;
     color: #292929;
-
   }
 
   div[class^="card-"]:hover {
@@ -1415,47 +1375,6 @@ footer {
     border: 2px solid #FDDCC4;
   }
 
-
-  .card-jennifer p,
-  .card-woody p,
-  .card-katrine p {
-    position: absolute;
-    width: 83px;
-    height: 23px;
-    left: 94px;
-    top: 300px;
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: 0.06em;
-    color: #545454;
-  }
-
-  .secondary-button {
-    position: absolute;
-    width: 187px;
-    height: 52px;
-    left: 41.5px;
-    top: 353px;
-  }
-
-  .card-jennifer button,
-  .card-katrine button,
-  .card-woody button {
-    align-items: center;
-    padding: 15px 45px;
-    border: 2px solid #F1CDB3;
-    border-radius: 100px;
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 130%;
-    letter-spacing: 0.06em;
-    color: #292929;
-  }
 
   button {
     cursor: pointer
@@ -2169,7 +2088,9 @@ footer {
   }
 
   .slider {
-    width: 100%;
+    margin: 0 auto;
+    margin-top: 43px;
+    width: 270px;
   }
 
   .pets-content {
@@ -2197,7 +2118,6 @@ footer {
     position: unset;
     margin-top: 24px;
     padding-left: 8px;
-
   }
 
   .secondary-button {
@@ -2209,7 +2129,9 @@ footer {
   .arrows {
     display: flex;
     width: 270px;
+    margin-top: 20px;
   }
+
 
   .primary-button-wrapper {
     width: 300px;
@@ -2219,7 +2141,7 @@ footer {
   .button-primary {
     position: unset;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 42px;
   }
 
   .help-list {
