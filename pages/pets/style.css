@@ -5,17 +5,21 @@
     padding: 0;
 }
 
+
 .main-div {
     position: relative;
     max-width: 1280px;
     width: 100%;
+    height: 100%;
     margin: auto;
 }
 
 .header {
-    position: absolute;
-    width: 100%;
+    position: fixed;
+    width: 1280px;
     height: 120px;
+    z-index: 3;
+    background: white;
 }
 
 .logo {
@@ -449,6 +453,13 @@ footer {
     display: none;
 }
 
+
+@media only screen and (max-width : 1280px) {
+    .header {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width : 1200px) {
 
     .pets {
@@ -739,7 +750,7 @@ footer {
     .logo-sandwich {
         position: absolute;
         top: 30px;
-        left: 30px;
+        left: 150px;
         z-index: 200;
         color: white;
     }
@@ -753,7 +764,7 @@ footer {
         align-items: center;
         background: #292929;
         z-index: 6;
-        width: 100%;
+        width: 320px;
         height: 100vh;
         margin: 0;
         padding: 0;
@@ -783,6 +794,10 @@ footer {
 @media only screen and (min-width : 741px) {
     .logo {
         display: block !important;
+    }
+
+    body {
+        overflow-y: scroll !important;
     }
 }
 

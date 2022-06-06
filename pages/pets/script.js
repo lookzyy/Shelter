@@ -5,11 +5,13 @@ var closeSandwich = document.getElementById('bar')
 openSandwich.addEventListener('click', () => {
     document.querySelector(".head-nav.sandwich").style.display = "block";
     document.querySelector(".logo").style.display = "none";
+    document.body.style.overflowY = 'hidden';
 })
 
 closeSandwich.addEventListener('click', () => {
     document.querySelector(".head-nav.sandwich").style.display = "";
     document.querySelector(".logo").style.display = "block";
+    document.body.style.overflowY = '';
 })
 
 

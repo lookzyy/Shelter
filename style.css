@@ -1067,6 +1067,11 @@ footer {
   .logo {
     display: block !important;
   }
+
+  body {
+    overflow-y: scroll !important;
+  }
+
 }
 
 @media only screen and (max-width : 1280px) {
@@ -1849,15 +1854,15 @@ footer {
     flex-direction: column;
     margin-right: 0;
     background: #292929;
-    width: 375px;
-
+    width: 320px;
   }
 
   .sandwich-bar {
     display: flex;
-    width: 100%;
+    width: 320px;
     background: #292929;
     padding-top: 40px;
+    margin-right: 0;
   }
 
   .head-nav.sandwich ul {
@@ -1866,7 +1871,8 @@ footer {
     display: flex;
     flex-direction: column;
     background: #292929;
-    width: 100%;
+    width: 320px;
+    margin-right: 0;
     height: 823px;
   }
 

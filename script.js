@@ -6,12 +6,14 @@ openSandwich.addEventListener('click', () => {
     document.querySelector(".head-nav.sandwich").style.display = "flex";
     document.querySelector(".logo").style.display = "none";
     document.querySelector(".sandwich-button").style.display = "none";
+    document.body.style.overflowY = 'hidden';
 })
 
 closeSandwich.addEventListener('click', () => {
     document.querySelector(".head-nav.sandwich").style.display = "";
     document.querySelector(".logo").style.display = "";
     document.querySelector(".sandwich-button").style.display = "";
+    document.body.style.overflowY = '';
 })
 
 
